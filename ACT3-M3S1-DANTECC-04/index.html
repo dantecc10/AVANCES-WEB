@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="IMG/íconoÁtomo.jpg" type="image/x-icon">
+    <link rel=StyleSheet href="CSS/Estilo-Universal.css" Type="text/css" MEDIA="screen">
+	<head>
+        <title>
+            Programación web - Dante Castelán Carpinteyro - M3S1, M3S2
+        </title>
+
+            
+    </head>
+    <body style="background-color: #56242A">
+        <div class="dropdown">
+            <button class="dropbtn">Menú</button>
+            <div class="dropdown-content">
+				<a href="index.html">Inicio</a>
+				<a href="CASTELÁN CARPINTEYRO DANTE_PRÁCTICA 1 - 2 - MI PRIMER JAVASCRIPT (ORIGINAL)_M3S2_PROG4A.html">Mi primer JavaScript</a>
+				<a href="Presidenciables.html">Presidenciables</a>
+				<a href="FórmulaGeneral.html">Fórmula General</a>
+				<a href="contacto.html">Contacto</a>
+                <a href="TeoremaPitágoras.html">Teorema de Pitágoras</a>
+			</div>
+          </div>
+        <br>
+        <script>nombreUsuario = prompt("Soy Dante Castelán Carpinteyro y hoy terminará siguiéndome en mis redes sociales. Hoy le presentaré información sobre la programación en JavaScript. ¿Cuál es su nombre?");
+            function MensajeJavaScript(nombreUsuario)
+            {
+                if (nombreUsuario=="")
+                {
+                    alert("Hola desconocido, veo que le ha dado click a mi 'logo' de JavaScript, lo llevaré a un artículo sobre el lenguaje...");
+                    location.href="https://es.wikipedia.org/wiki/JavaScript";
+                }
+                else
+                {
+                    alert("Hola "+ nombreUsuario+ ", veo que le ha dado click a mi 'logo' de JavaScript, lo llevaré a un artículo sobre el lenguaje...");
+                    location.href="https://es.wikipedia.org/wiki/JavaScript";
+                }
+            }
+                //Declaración de funciones de redes sociales
+                function AbrirFacebook(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré a mi perfil de Facebook...");
+                    location.href="https://www.facebook.com/DanteCC10.4T";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré a mi perfil de Facebook...");
+                    location.href="https://www.facebook.com/DanteCC10.4T";
+                }
+                }
+        function MuestraImagen(src, width, height, alt) 
+        {
+            var a = document.createElement("img");
+            a.src = src;
+            a.width = width;
+            a.height = height;
+            a.alt = alt;
+            document.body.appendChild(a);
+            //document.getElementById("Hacker").appendChild(a);
+        }
+        if (nombreUsuario=="") 
+        {
+            document.getElementById("Disfrute").innerText=("Espero que disfrute de esta lectura, usuario que no ha querido revelarme su nombre... ¡sí! me di cuenta de eso. ¿Se siente vigilado o espiado? Y eso que aún no sé cómo programar cookies...");
+            
+            MuestraImagen('https://img1.freepng.es/20180719/hb/kisspng-logo-computer-icons-clip-art-white-hat-hacker-icon-5b501129bee196.7461762215319739297819.jpg', 80, 80, 'Black Hat');
+        }
+        else
+        {
+            document.write('Disfrute de la lectura, destacado usuario ', nombreUsuario, ".");
+            MuestraImagen('https://www.clipartmax.com/png/middle/232-2320630_sombrero-blanco-la-moda-white-hat.png', 80, 80, 'White Hat');
+        }
+        
+            function AbrirWhatsApp(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré a un chat conmigo en WhatsApp...");
+                    location.href="https://wa.me/527979773095";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré a un chat conmigo en WhatsApp...");
+                    location.href="https://wa.me/527979773095";
+                }
+                }
+            function AbrirMessenger(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré a un chat conmigo en Messenger...");
+                    location.href="https://m.me/dantecc10fi";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré a un chat conmigo en Messenger...");
+                    location.href="https://m.me/dantecc10fi";
+                }		
+                }
+            function AbrirYouTube(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré mi canal de YouTube...");
+                    location.href="https://www.youtube.com/channel/UCXjG-Lpe_lEUwVdBHS2u3Aw";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré mi canal de YouTube...");
+                    location.href="https://www.youtube.com/channel/UCXjG-Lpe_lEUwVdBHS2u3Aw";
+                }		
+                }
+            function AbrirTelegram(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré a un chat conmigo en Telegram...");
+                    location.href="https://t.me/dantecc10";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré a un chat conmigo en Telegram...");
+                    location.href="https://t.me/dantecc10";
+                }		
+                }
+            function AbrirTwitter(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré a mi cuenta de Twitter...");
+                    location.href="https://www.twitter.com/dantecc10";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré a mi cuenta de Twitter...");
+                    location.href="https://www.twitter.com/dantecc10";
+                }
+                }
+            function AbrirGitHub(nombreUsuario)
+                {
+                if (nombreUsuario=="")
+                {
+                    alert("Aunque no se identificó le redirigiré a mis respositorios de GitHub...");
+                    location.href="https://www.github.com/dantecc10";
+                }
+                else
+                {
+                    alert(nombreUsuario+", le redirigiré a mis respositorios de GitHub...");
+                    location.href="https://www.github.com/dantecc10";
+                }		
+                }
+                //Fin de declaración de funciones de redes sociales
+                //Función de comparación de texto en input
+                function FórmulaGeneral()
+                {
+                    var Avalor = document.getElementById("valorA").value;
+                    var Bvalor = document.getElementById("valorB").value;
+                    var Cvalor = document.getElementById("valorC").value;
+                    var discriminante=(Math.pow(Bvalor, 2)-(Avalor*Cvalor*4));
+                    var disc1 = (Math.pow(Bvalor, 2));
+                    var disc2 = -(4*Avalor*Cvalor);
+                    var disc3 = Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor));
+                    var disc4 = ("Semi x1= "+(-(Bvalor)-(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor)))));
+                    var disc5 = ("Semi x2= "+(-(Bvalor)+(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor)))));
+                
+                    var x1 = (-(Bvalor)-(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor))))/2;
+                    var x2 = (-(Bvalor)+(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor))))/2;
+                    document.getElementById("Discriminante").innerText=("El valor del discriminante es "+discriminante+".");
+                    /*document.getElementById("DISC1").innerText=(disc1);
+                    document.getElementById("DISC2").innerText=(disc2);
+                    document.getElementById("DISC3").innerText=(disc3);
+                    document.getElementById("DISC4").innerText=(disc4);
+                    document.getElementById("DISC5").innerText=(disc5);*/
+                    document.getElementById("ResultadoX1").innerText=("El valor de x1 es "+x1+".");
+                    document.getElementById("ResultadoX2").innerText=("El valor de x2 es "+x2+".");
+                    alert("El valor de x1 es "+x1+".");
+                    alert("El valor de x2 es "+x2+".");
+                }
+                    //Evaluación de primer input
+                    /*if (Bvalor>=0)
+                    {
+                        if(Math.pow(Bvalor, 2)-(Avalor*Cvalor*4)>=0)
+                        {
+                            alert("El valor de x1 es: "+x1);
+                            alert("El valor de x2 es: "+x2);
+                            document.getElementById("ResultadoX1").innerText=("El valor de x1 es "+x1+".");
+                            document.getElementById("ResultadoX2").innerText=("El valor de x2 es "+x2+".");
+                        }
+                        else
+                        {
+                            document.getElementById("Resultados").innerHTML=("Error: el valor del discriminante es negativo ("+discriminante+").");
+                        }
+                      }
+                    else
+                      {
+                        document.getElementById("Resultados").innerHTML=("Error: el valor de B es negativo ("+Bvalor+").");				
+                    }*/</script>
+        <font color="#B38E5D" face="Arial">
+            <h1><b><div align="center">Programación <i>Web</i></div></b></h1>
+		</font>
+        <font>      
+            <p><i><div align="center">Por Dante Castelán Carpinteyro</div></i></p>
+			<p><div align="left">Añadiré en esta página web mis avances en mis submódulos de programación, fusionados, y con el mayor profesionalismo posible con el fin de acelerar mi aprendizaje, profundizar en conocimientos, técnica, ¿y por qué no? Para ahorrar tiempo y esfuerzo en programación.</div></p>
+        </font>
+
+        
+        <div id="Redes Sociales" align="center">
+            <hr>
+            <h3>Mis redes sociales</h3>
+            <input type="image" style="color: blue;"  onclick="javascript:AbrirFacebook(nombreUsuario);" value="Facebook" src="IMG/íconoFacebook.png" width="45px" height="45px"/>
+            <input type="image" style="color: green;" onclick="javascript:AbrirWhatsApp(nombreUsuario);" value="WhatsApp" src="IMG/íconoWhatsApp.png" width="45px" height="45px"/>
+            <input type="image" style="color: purple;" onclick="javascript:AbrirMessenger(nombreUsuario);" value="Messenger" src="IMG/íconoMessenger.png" width="45px" height="45px"/>
+            <input type="image" style="color: purple;" onclick="javascript:AbrirYouTube(nombreUsuario);" value="YouTube" src="IMG/íconoYouTube.png" width="45px" height="45px"/>
+            <input type="image" style="color: blue;" onclick="javascript:AbrirTelegram(nombreUsuario);" value="Telegram" src="IMG/íconoTelegram.png" width="45px" height="45px"/>
+            <input type="image" style="color: blue;" onclick="javascript:AbrirTwitter(nombreUsuario);" value="Twitter" src="IMG/íconoTwitter.png" width="45px" Daheight="45px"/>
+            <input type="image" style="color: black;" onclick="javascript:AbrirGitHub(nombreUsuario);" value="GitHub" src="IMG/íconoGitHub.png" width="45px" height="45px"/>
+        </div>
+    </body>
+</html>

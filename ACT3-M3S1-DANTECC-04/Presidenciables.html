@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+    <html lang="es">
+	<meta charset = "utf-8">
+    <link rel="shortcut icon" href="IMG/BanderaMéxico200x114.png" type="image/x-icon">
+	<link rel=StyleSheet href="CSS/Estilo-Universal.css" Type="text/css" MEDIA="screen">
+    <head>
+        <title>Presidenciables</title>
+    </head>
+    <body style="background-color:#56242A;">
+		<div class="dropdown">
+			<button class="dropbtn">Menú</button>
+			<div class="dropdown-content">
+				<a href="index.html">Inicio</a>
+				<a href="CASTELÁN CARPINTEYRO DANTE_PRÁCTICA 1 - 2 - MI PRIMER JAVASCRIPT (ORIGINAL)_M3S2_PROG4A.html">Mi primer JavaScript</a>
+				<a href="Presidenciables.html">Presidenciables</a>
+				<a href="FórmulaGeneral.html">Fórmula General</a>
+				<a href="contacto.html">Contacto</a>
+				<a href="TeoremaPitágoras.html">Teorema de Pitágoras</a>
+			</div>
+		  </div>
+		<br>
+        <font color="#B38E5D"  face= "Arial">
+			<h1><b>
+            <div align="center">
+                Presidenciables mexicanos para el 2024
+                <input height="22.8px" width="40px" type="image" style="color: black;" value="Bandera de México" src="IMG/BanderaMéxico200x114.png"/>
+            </div></b></h1>
+			<p><i><div align="center"><a href="https://code.futureed.com">Muchas etiquetas de este HTML las aprendí por mi cuenta o en el curso "Fundamentos de la Programación Web"</a></div></i></p>
+			<p><i><div align="center">Bienvenidos a mi página, por Dante Castelán Carpinteyro</div></i></p>
+            <a href="contacto.html">Contáctame</a>
+		</font>
+        <!-- Script para mostrar la información previmamente solicitada -->
+			<script>
+                nombreUsuario = prompt("Soy Dante Castelán Carpinteyro y hoy terminará siguiéndome en mis redes sociales. Hoy le presentaré información sobre la programación en JavaScript. ¿Cuál es su nombre?");
+    function MensajeJavaScript(nombreUsuario)
+    {
+        if (nombreUsuario=="")
+        {
+            alert("Hola desconocido, veo que le ha dado click a mi 'logo' de JavaScript, lo llevaré a un artículo sobre el lenguaje...");
+            location.href="https://es.wikipedia.org/wiki/JavaScript";
+        }
+        else
+        {
+            alert("Hola "+ nombreUsuario+ ", veo que le ha dado click a mi 'logo' de JavaScript, lo llevaré a un artículo sobre el lenguaje...");
+            location.href="https://es.wikipedia.org/wiki/JavaScript";
+        }
+    }
+    	//Declaración de funciones de redes sociales
+        function AbrirFacebook(nombreUsuario)
+	    {
+	    if (nombreUsuario=="")
+	    {
+		    alert("Aunque no se identificó le redirigiré a mi perfil de Facebook...");
+		    location.href="https://www.facebook.com/DanteCC10.4T";
+	    }
+    	else
+	    {
+		    alert(nombreUsuario+", le redirigiré a mi perfil de Facebook...");
+		    location.href="https://www.facebook.com/DanteCC10.4T";
+    	}
+	    }
+function MuestraImagen(src, width, height, alt) 
+{
+    var a = document.createElement("img");
+    a.src = src;
+    a.width = width;
+    a.height = height;
+    a.alt = alt;
+    document.body.appendChild(a);
+    //document.getElementById("Hacker").appendChild(a);
+}
+function Saludar(nombreUsuario)
+{
+	if (nombreUsuario=="") 
+	{
+    	document.getElementById("Disfrute").innerText=("Espero que disfrute de esta lectura, usuario que no ha querido revelarme su nombre... ¡sí! me di cuenta de eso. ¿Se siente vigilado o espiado? Y eso que aún no sé cómo programar cookies...");
+	    MuestraImagen('https://img1.freepng.es/20180719/hb/kisspng-logo-computer-icons-clip-art-white-hat-hacker-icon-5b501129bee196.7461762215319739297819.jpg', 80, 80, 'Black Hat');
+	}
+	else
+	{
+    	document.write('Disfrute de la lectura, destacado usuario ', nombreUsuario, ".");
+    	MuestraImagen('https://www.clipartmax.com/png/middle/232-2320630_sombrero-blanco-la-moda-white-hat.png', 80, 80, 'White Hat');
+	}
+}
+
+    function AbrirWhatsApp(nombreUsuario)
+		{
+		if (nombreUsuario=="")
+		{
+			alert("Aunque no se identificó le redirigiré a un chat conmigo en WhatsApp...");
+			location.href="https://wa.me/527979773095";
+		}
+		else
+		{
+			alert(nombreUsuario+", le redirigiré a un chat conmigo en WhatsApp...");
+			location.href="https://wa.me/527979773095";
+		}
+		}
+	function AbrirMessenger(nombreUsuario)
+        {
+		if (nombreUsuario=="")
+		{
+			alert("Aunque no se identificó le redirigiré a un chat conmigo en Messenger...");
+			location.href="https://m.me/dantecc10fi";
+		}
+		else
+		{
+			alert(nombreUsuario+", le redirigiré a un chat conmigo en Messenger...");
+			location.href="https://m.me/dantecc10fi";
+		}		
+		}
+    function AbrirYouTube(nombreUsuario)
+        {
+        if (nombreUsuario=="")
+        {
+            alert("Aunque no se identificó le redirigiré mi canal de YouTube...");
+            location.href="https://www.youtube.com/channel/UCXjG-Lpe_lEUwVdBHS2u3Aw";
+        }
+        else
+		{
+			alert(nombreUsuario+", le redirigiré mi canal de YouTube...");
+			location.href="https://www.youtube.com/channel/UCXjG-Lpe_lEUwVdBHS2u3Aw";
+		}		
+		}
+	function AbrirTelegram(nombreUsuario)
+		{
+		if (nombreUsuario=="")
+		{
+			alert("Aunque no se identificó le redirigiré a un chat conmigo en Telegram...");
+			location.href="https://t.me/dantecc10";
+		}
+		else
+		{
+			alert(nombreUsuario+", le redirigiré a un chat conmigo en Telegram...");
+			location.href="https://t.me/dantecc10";
+		}		
+		}
+	function AbrirTwitter(nombreUsuario)
+		{
+		if (nombreUsuario=="")
+    	{
+    		alert("Aunque no se identificó le redirigiré a mi cuenta de Twitter...");
+			location.href="https://www.twitter.com/dantecc10";
+		}
+		else
+		{
+			alert(nombreUsuario+", le redirigiré a mi cuenta de Twitter...");
+			location.href="https://www.twitter.com/dantecc10";
+		}
+		}
+	function AbrirGitHub(nombreUsuario)
+		{
+		if (nombreUsuario=="")
+		{
+			alert("Aunque no se identificó le redirigiré a mis respositorios de GitHub...");
+			location.href="https://www.github.com/dantecc10";
+		}
+		else
+		{
+	    	alert(nombreUsuario+", le redirigiré a mis respositorios de GitHub...");
+			location.href="https://www.github.com/dantecc10";
+		}		
+		}
+		//Fin de declaración de funciones de redes sociales
+		//Función de comparación de texto en input
+		function FórmulaGeneral()
+		{
+			var Avalor = document.getElementById("valorA").value;
+			var Bvalor = document.getElementById("valorB").value;
+			var Cvalor = document.getElementById("valorC").value;
+			var discriminante=(Math.pow(Bvalor, 2)-(Avalor*Cvalor*4));
+			var disc1 = (Math.pow(Bvalor, 2));
+			var disc2 = -(4*Avalor*Cvalor);
+			var disc3 = Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor));
+			var disc4 = ("Semi x1= "+(-(Bvalor)-(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor)))));
+			var disc5 = ("Semi x2= "+(-(Bvalor)+(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor)))));
+		
+            var x1 = (-(Bvalor)-(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor))))/2;
+			var x2 = (-(Bvalor)+(Math.sqrt((Math.pow(Bvalor, 2))-(4*Avalor*Cvalor))))/2;
+			document.getElementById("Discriminante").innerText=("El valor del discriminante es "+discriminante+".");
+			/*document.getElementById("DISC1").innerText=(disc1);
+			document.getElementById("DISC2").innerText=(disc2);
+			document.getElementById("DISC3").innerText=(disc3);
+			document.getElementById("DISC4").innerText=(disc4);
+			document.getElementById("DISC5").innerText=(disc5);*/
+			document.getElementById("ResultadoX1").innerText=("El valor de x1 es "+x1+".");
+			document.getElementById("ResultadoX2").innerText=("El valor de x2 es "+x2+".");
+			alert("El valor de x1 es "+x1+".");
+			alert("El valor de x2 es "+x2+".");
+		}
+			//Evaluación de primer input
+			/*if (Bvalor>=0)
+	    	{
+				if(Math.pow(Bvalor, 2)-(Avalor*Cvalor*4)>=0)
+				{
+					alert("El valor de x1 es: "+x1);
+					alert("El valor de x2 es: "+x2);
+					document.getElementById("ResultadoX1").innerText=("El valor de x1 es "+x1+".");
+					document.getElementById("ResultadoX2").innerText=("El valor de x2 es "+x2+".");
+				}
+				else
+				{
+					document.getElementById("Resultados").innerHTML=("Error: el valor del discriminante es negativo ("+discriminante+").");
+				}
+  			}
+			else
+  			{
+				document.getElementById("Resultados").innerHTML=("Error: el valor de B es negativo ("+Bvalor+").");				
+			}*/
+            </script>
+			<!-- 
+			<script> 
+				/*Lo mandé a un externo*/
+			</script>
+			-->
+        <p><i>Me es grato hacer que esta página esté disponible para ustedes</i>  <br/>Espero que sirva como ejemplo para poder desarrollar más contenido novedoso.</p>
+        <hr/>
+        <h2>Lista de presidenciables para el 2024<h1>
+            <h3>Presidenciables de izquierda (MORENA-PT-PVEM) [los principales]</h2>
+                <ol>
+                    <li>Marcelo Ebrard Casaubón</li><br>
+                        <div>
+                            <input height="250px" width="250px" type="image" style="color: black;" onclick="javascript:Ebrard(nombreUsuario);" value="Marcelo Ebrard" src="IMG/Presidenciables/MarceloEbrard_582x582.jpg"/>
+                        </div>
+                    <li>Claudia Sheinbaum Pardo</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:ClaudiaSheinbaum(nombreUsuario);" value="Claudia Sheinbaum" src="IMG/Presidenciables/ClaudiaSheinbaum.jpg"/>
+                        </div>
+                    <li>José Gerardo Rodolfo Fernández Noroña</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:Noroña(nombreUsuario);" value="Gerardo Fernández Noroña" src="IMG/Presidenciables/Noroña.jpg"/>
+                        </div>
+                    <li>Adán Augusto López Hernández</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:AdánAugusto(nombreUsuario);" value="Adán Augusto López Hernández" src="IMG/Presidenciables/AdánAugusto.jpg"/>
+                        </div>
+                    <li>¿Ricardo Monreal Ávila?</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:RicardoMonreal(nombreUsuario);" value="Ricardo Monreal" src="IMG/Presidenciables/RicardoMonreal.jpg"/>
+                        </div>
+                </ol>
+            <h3>Presidenciables de derecha (PRIANRDMC)</h3>
+                <ol>
+                    <li>Ricardo Anaya Cortés</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:RickyRiquínCanayín(nombreUsuario);" value="Ricardo Anaya Cortés" src="IMG/Presidenciables/RicardoAnaya.jpg"/>
+                        </div>
+                    <li>María Lilly del Carmen Téllez García</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:LillyTéllez(nombreUsuario);" value="Lilly Téllez" src="IMG/Presidenciables/LillyTéllez.jpg"/>
+                        </div>
+                    <li>Damián Zepeda Vidales</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:DamiánZepeda(nombreUsuario);" value="Damián Zepeda" src="IMG/Presidenciables/DamiánZepeda.jpg"/>
+                        </div>
+                    <li>Gabriel Quadri de la Torre</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:GabrielQuadri(nombreUsuario);" value="Gabriel Quadri" src="IMG/Presidenciables/GabrielQuadri.jpg"/>
+                        </div>
+                    <li>Enrique Alfaro Ramírez</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:EnriqueAlfaro(nombreUsuario);" value="Enrique Alfaro" src="IMG/Presidenciables/EnriqueAlfaro.jpg"/>
+                        </div>
+                    <li>Samuel García Sepúlveda</li><br>
+                        <div>
+                            <input height="250px" width="250px"  type="image" style="color: black;" onclick="javascript:SamuelGarcía(nombreUsuario);" value="Samuel García" src="IMG/Presidenciables/SamuelGarcía.jpg"/>
+                        </div>
+                    <li>Alejandro Moreno Cárdenas</li><br>
+                        <div>
+                            <input height="250px" width="250px" type="image" style="color: black;" onclick="javascript:AlitoMoreno(nombreUsuario);" value="Alito Moreno" src="IMG/Presidenciables/AlitoMoreno.jpg"/>
+                        </div>
+                </ol>
+        <h1>Imágenes</h1>
+        <img src="" alt="Este es el actual Presidente Constitucional de los Estados Unidos Mexicanos"/>
+        <div id="Redes Sociales" align="center">
+            <hr>
+            <script src="JavaScript/JavaScript-Redes-Sociales.js"></script>
+            <h3>Mis redes sociales</h3>
+            <input type="image" style="color: blue;"  onclick="JavaScript:AbrirFacebook(nombreUsuario);" id="Facebook" src="IMG/íconoFacebook.png" width="45px" height="45px"/>
+            <input type="image" style="color: green;" onclick="javascript:AbrirWhatsApp(nombreUsuario);" id="WhatsApp" src="IMG/íconoWhatsApp.png" width="45px" height="45px"/>
+            <input type="image" style="color: purple;" onclick="javascript:AbrirMessenger(nombreUsuario);" id="Messenger" src="IMG/íconoMessenger.png" width="45px" height="45px"/>
+            <input type="image" style="color: purple;" onclick="javascript:AbrirYouTube(nombreUsuario);" id="YouTube" src="IMG/íconoYouTube.png" width="45px" height="45px"/>
+            <input type="image" style="color: blue;" onclick="javascript:AbrirTelegram(nombreUsuario);" id="Telegram" src="IMG/íconoTelegram.png" width="45px" height="45px"/>
+            <input type="image" style="color: blue;" onclick="javascript:AbrirTwitter(nombreUsuario);" id="Twitter" src="IMG/íconoTwitter.png" width="45px" Daheight="45px"/>
+            <input type="image" style="color: black;" onclick="javascript:AbrirGitHub(nombreUsuario);" id="GitHub" src="IMG/íconoGitHub.png" width="45px" height="45px"/>
+        </div>
+    </body> 
+</html>

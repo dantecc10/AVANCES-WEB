@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta charset0utf-8>
+        <title>Ejemplos de variables...</title>
+        <meta name="Author" content="Dante Castelán Carpinteyro">
+    </head>
+    <body bgcolor="#ffcc11">
+        <p align="right">
+            <font color="blue">
+                ]\/[; no le he colocado nada adicional a este programa; sin embargo, revisaré bien las funciones para poder aprovecharlas cuando las necesite en mis programas formalmente hechos.
+            </font>
+        </p>
+        <br>
+        <h1>Descripción de algunos ejemplos haciendo uso de variables...</h1>
+        <br>
+        <hr>
+        <br>
+        <!-- Ejemplo de script haciendo uso de funciones para que éstas respondan a la acción de un botón en el evento click, el botón está creado con marcas de HTML-->
+        <script>
+            function Ej1()
+            {
+                var dato;
+                dato = prompt("Captura un dato alfabético: ")
+                alert("El dato capturado es \n \n "+ dato);
+            }
+            function Ej2()
+            {
+                var nc; //Declaraciónd e variables y uso de función para convertir a mayúsculas.
+                nc = prompt("Captura tu nombre completo en letra minúscula: ")
+                alert("Tu nombre completo en MAYÚSCULAS es \n \n"+nc.toUpperCase());
+            }
+            function Ej3()
+            {
+                var nc; //Declaración de variables y uso de función para convertir a minúsuclas
+                nc = prompt("Captura tu nombre completo en letra MAYÚSCULA");
+                alert("Tu nombre completo en letra minúscula es: \n \n "+nc.toLowerCase());
+            }
+            function Ej4()
+            {
+                var nc; //Declaración de variables y uso de función para eliminar espacios
+                nc = prompt("Captura tu nombre completo...");
+                result = nc.replace(/\s+/g, '');
+                alert("Tu nombre completo sin espacios es: \n\n"+result);
+            }
+            function Ej5()
+            {
+                var nc; //Declaración de variable y uso de función para reemplazar caracteres
+                nc = prompt("Captura tu nombre completo...");
+                result = nc.replace(/e/gi, "3");
+                alert("Tu nombre completo con reemplazo de la letra e/E por el número 3 es: \n\n"+result);
+            }
+            function Ej6 ()
+            {
+                var phora, nh, sueldo
+                var ispt = .1;
+                phora = prompt("Captura el pago por hora: ");
+                nh = prompt("Captura el número de horas laboradas a la semana: ");
+                sueldo = phora*nh;
+                sueldo = sueldo - (sueldo*ispt);
+                alert("El sueldo total es: $" + sueldo + "\nEl sueldo con descuento del ISPT es: $" + sueldo);
+            }
+            function Ej7()
+            {
+                var num = prompt("Introduce un número: ");
+                var resultado = Math.sqrt(num); //Uso de función apra calcular la raíz cuadrada
+                alert("La raíz cuadrada de " + num + " es: " + resultado);
+            }
+            function Ej8()
+            {
+                const x = Math.floor(Math.random() * 9); //Uso de un función para generar valores aleatorios
+                alert("El número generado de manera aleatoria es: \n " + x);
+
+            }
+        </script>
+        <b>Variables de tipo TEXTO</b><br><br><br>
+        <input type="button" onClick = "Ej1()" title="Iniciamos..." value="Capturar e imprimir"><br><br>
+        <input type="button" onClick = "Ej2()" value="Convertir a  mayúsculas..."><br><br>
+        <input type="button" onClick = "Ej3()" value="Convertir a minúsculas"><br><br>
+        <input type="button" onClick = "Ej4()" value="Eliminar espacios"><br><br>
+        <input type="button" onClick = "Ej5()" value="Reemplazar caracteres"><br><br>
+        <hr>
+        <br><b>Variables de tipo NUMÉRICO</b><br><br><br>
+        <input type="button" onClick = "Ej6()" value="Calcular sueldo"><br><br>
+        <input type="button" onClick = "Ej7()" value="Raíz cuadrada"><br><br>
+        <input type="button" onClick = "Ej8()" value="Generar número al azar"><br><br>
+    </body>
+</html>
