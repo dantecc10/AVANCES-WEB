@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Ejemplos de If y Switch...</title>
+        <meta name="Autor" content="Miguel Angel Islas Aista">
+    </head>
+    <body bgcolor=#ffcc11>
+        <p align=right><font color="blue">]\/[</font></p>
+        <br>
+<h1>Descripción de algunos ejemplos ...</h1>
+<br><hr><br>
+<!-- Ejemplo de script haciendo uso de funciones para que éstas respondan a la acción de un botón 
+     en el evento clic, el botón esta creado con marcas de HTML -->
+<script>
+    function ObtenerTiempo()
+    {
+        var currentTime = new Date();
+        var año = currentTime.getFullYear();
+        var mes = currentTime.getMonth();
+        var día = currentTime.getDay();
+        var hora = currentTime.getHours();
+        var minuto = currentTime.getMinutes();
+        var segundo = currentTime.getSeconds();
+        var milisegundo = currentTime.getMilliseconds();
+
+        
+
+        
+
+    }
+
+    function EjemploIf_1() 
+    {
+		var l1,l2,area,peri;
+        l1=parseInt(prompt("Captura el valor del lado 1: "));
+		l2=parseInt(prompt("Captura el valor del lado 2: "));
+		area=l1*l2;
+		peri=(l1+l2)*2;
+		alert("El area es: "+area+"\nEl perimetro es: "+peri);
+		if (l1==l2)
+		{
+			alert("La figura es un CUADRARDO");
+		}
+		else
+		{
+			alert("La figura es un RECTÁNGULO");
+		}
+    }
+	
+	
+    function EjemploIf_2() 
+    {
+    var num,residuo;
+		num=parseInt(prompt("Captura un numero: "));
+		if (num>0)
+		{
+			alert ("El numero es POSITIVO");
+			residuo=num%2;
+			if(residuo==0)
+			{
+			alert("El numero es PAR");
+			}
+			else
+			{
+			alert("El numero es IMPAR");
+			}
+		}
+		else
+		{
+		alert("El numero es NEGATIVO");
+		}
+    }
+    function EjemploIf_3() 
+    {
+    
+	
+	
+	
+    }
+    function Ej4() 
+    {
+    var nc;   //Declaraión de variable y uso de función para eliminar espacios
+        nc=prompt("Captura tu nombre completo...");
+        result=nc.replace(/\s+/g, '');
+        alert("Tu nombre completo sin espacios es: \n \n" + result);
+    }
+    function Ej5() 
+    {
+    var nc;   //Declaraión de variable y uso de funcion para reemplazar caracteres
+        nc=prompt("Captura tu nombre completo...");
+        result=nc.replace(/e/gi, "3");
+        alert("Tu nombre con reemplazo de la letra e/E por el número 3 es: \n \n" + result);
+    }
+    function Ej6() 
+    {
+    var phora,nh,sueldo;
+    var ispt=.1;
+        phora=prompt("Captura el pago por hora: ");
+        nh=prompt("Captura el número de horas laboradas a la semana: ");
+        sueldo=phora*nh;
+        sueldon=sueldo-(sueldo*ispt);
+        alert("El sueldo total es: $ " + sueldo + "\nEl sueldo con descuento del ISPT es: $ " + sueldon);
+    }
+    function Ej7() 
+    {
+    var num = prompt("Introduce un numero"); 
+    var resultado = Math.sqrt(num);     //Uso de función para calcular la raíz cuadrada
+    alert("La raíz cuadrada de " + num + " es: " + resultado);
+    }
+    function Ej8() 
+    {
+        const x = Math.floor(Math.random() * 9);    //Uso de una función para generar valores aleatorios    
+        alert("El número genera de manera aleatoria es:\n " + x);
+    }
+    
+</script>
+        
+    <b>Ejemplos del uso del If</b><br><br><br>
+    <input type=button onClick="EjemploIf_1()" title="If..." value=" Adivinar Paralelogramo "><br><br>
+    <input type=button onClick="EjemploIf_2()" value=" Positivo y Negativo "><br><br>
+    <input type=button onClick="EjemploIf_3()" value=" Votar y No votar "><br><br>
+    <input type=button onClick="Ej4()" value=" Sueldo con Hrs Extra doble y triple "><br><br>
+    <input type=button onClick="Ej5()" value=" Opcional "><br><br>
+    <hr>
+    <br><b>Ejemplos del uso de Switch</b><br><br><br>
+    <input type=button onClick="Ej6()" value=" Calcular sueldo "><br><br>
+    <input type=button onClick="Ej7()" value=" Raíz cuadrada "><br><br>
+    <input type=button onClick="Ej8()" value=" Generar Número al Azar "><br><br>
+        
+    </body>
+</html>
+
+
+
